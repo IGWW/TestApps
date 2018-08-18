@@ -12,16 +12,25 @@ public class HelloWorld {
 	/**
 	 * Starts the main application
 	 * <p>
-	 * This method prints "Hello World" to the console
+	 * Call another method -SayHelloWorld-
 	 * <p>
-	 * This method loops a number (Max) times
-	 *
+	 * 
 	 * @param args a string array containing all the arguments from the command line
 	 */
 
 	public static void main(String[] args) {
 		SayHelloWorld(args);
 	}
+
+	/**
+	 * This method prints "Hello World" to the console
+	 * <p>
+	 * This method loops a number (Max) times
+	 *
+	 * @param args a string array containing all the arguments from the command line
+	 * 
+	 * @return value indicating number of times the method looped
+	 */
 
 	public static int SayHelloWorld(String[] args) throws NumberFormatException, NullPointerException {
 
