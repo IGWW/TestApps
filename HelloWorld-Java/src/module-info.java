@@ -5,6 +5,7 @@
  * @author Bob
  *
  */
-module HelloWorld {
-
-}
+/** module HelloWorld {
+*
+*}
+*/

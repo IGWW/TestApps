@@ -33,7 +33,7 @@ public class HelloWorld {
      * @return value indicating number of times the method looped
      */
 
-    public static int SayHelloWorld(String[] args) throws NumberFormatException, NullPointerException {
+    public static int SayHelloWorld(String[] args) throws NumberFormatException, NullPointerException, ArrayIndexOutOfBoundsException {
 
 	Integer i = 1;
 	Integer Max = 3;
@@ -66,8 +66,24 @@ public class HelloWorld {
 	    // throw new NullPointerException("MISSING ARGUMENT: Argument must be a Positive
 	    // Integer");
 
+	} catch (ArrayIndexOutOfBoundsException e) {
+	    System.err.println("NO ARGUMENT: Argument must be a Positive Integer");
+	    System.err.println("  Using DEFAULT value: " + Max + " ");
+	    System.err.println("  ");
+
+	    firstArg = Max;
+
+	    // throw new ArrayIndexOutOfBoundsException("NO ARGUMENT: Argument must be a Positive
+	    // Integer");
+
 	} catch (Exception e) {
-	    System.err.println("ERROR: argument <" + args[0] + "> caused an " + e + " error!");
+
+		if (args.length == 0) {
+			System.err.println("ERROR: argument <" + "missing"  + "> caused an " + e + " error!");
+	    } else {
+			System.err.println("ERROR: argument <" + args[0] + "> caused an " + e + " error!");
+	    }
+	    	
 	    System.err.println("  Using DEFAULT value: " + Max + " ");
 	    System.err.println("  ");
 

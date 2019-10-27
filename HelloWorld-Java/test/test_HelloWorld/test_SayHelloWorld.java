@@ -9,7 +9,16 @@ import HelloWorld.HelloWorld;
 public class test_SayHelloWorld {
 
     @Test
-    public void testInteger() {
+    public void testInteger1() {
+
+	String[] testArgs = { "5" };
+
+	// HelloWorld myTest = new HelloWorld();
+	assertEquals(5, HelloWorld.SayHelloWorld(testArgs));
+    }
+
+    @Test
+    public void testInteger2() {
 
 	String[] testArgs = { "5", "2" };
 
