@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HelloWorld
 {
-    class HelloWorld
+    public class HelloWorld
     {
-        static void Main(string[] args)
+        static void Main(String[] args)
         {
             SayHelloWorld(args);
             Console.ReadLine();
@@ -46,6 +46,14 @@ namespace HelloWorld
                 firstArg = Max;
             }
             catch (IndexOutOfRangeException)
+            {
+                Console.WriteLine("MISSING ARGUMENT: Argument must be a Positive Integer");
+                Console.WriteLine("  Using DEFAULT value: " + Max + " ");
+                Console.WriteLine("  ");
+
+                firstArg = Max;
+            }
+            catch (NullReferenceException)
             {
                 Console.WriteLine("MISSING ARGUMENT: Argument must be a Positive Integer");
                 Console.WriteLine("  Using DEFAULT value: " + Max + " ");

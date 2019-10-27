@@ -5,3 +5,5 @@ D:\Users\Bob\GitHub-IGWW\TestApps\HelloWorld-Csharp\HelloWorld\HelloWorld\obj\De
 D:\Users\Bob\GitHub-IGWW\TestApps\HelloWorld-Csharp\HelloWorld\HelloWorld\obj\Debug\HelloWorld.csproj.CoreCompileInputs.cache
 D:\Users\Bob\GitHub-IGWW\TestApps\HelloWorld-Csharp\HelloWorld\HelloWorld\obj\Debug\HelloWorld.exe
 D:\Users\Bob\GitHub-IGWW\TestApps\HelloWorld-Csharp\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
+D:\Users\Bob\GitHub-IGWW\TestApps\HelloWorld-Csharp\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.CodeAnalysisLog.xml
+D:\Users\Bob\GitHub-IGWW\TestApps\HelloWorld-Csharp\HelloWorld\HelloWorld\bin\Debug\HelloWorld.exe.lastcodeanalysissucceeded

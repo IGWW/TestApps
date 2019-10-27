@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\HelloWorld-Csharp",
+    "\\HelloWorld-Csharp\\HelloWorld",
+    "\\HelloWorld-Csharp\\HelloWorld\\HelloWorld",
+    "\\HelloWorld-Csharp\\HelloWorld\\test_HelloWorld"
+  ],
+  "SelectedNode": "\\HelloWorld-Csharp\\HelloWorld\\test_HelloWorld",
+  "PreviewInSolutionExplorer": false
+}
