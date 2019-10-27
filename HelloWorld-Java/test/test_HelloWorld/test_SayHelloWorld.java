@@ -27,6 +27,15 @@ public class test_SayHelloWorld {
     }
 
     @Test
+    public void testInteger3() {
+
+	String[] testArgs = { "5", "2", "3" };
+
+	// HelloWorld myTest = new HelloWorld();
+	assertEquals(5, HelloWorld.SayHelloWorld(testArgs));
+    }
+
+    @Test
     public void testZero() {
 
 	String[] testArgs = { "0", "2" };
@@ -63,7 +72,7 @@ public class test_SayHelloWorld {
     }
 
     @Test
-    public void testNoArgs() {
+    public void testNullArgs() {
 
 	// String[] testArgs = { null };
 	String[] testArgs = null;
@@ -72,4 +81,14 @@ public class test_SayHelloWorld {
 	assertEquals(3, HelloWorld.SayHelloWorld(testArgs));
     }
 
+    @Test
+    public void testNoArgs() {
+
+	//String[] testArgs = { null };
+    //String[] testArgs = { "" };
+    String[] testArgs = {  };
+  	
+	// HelloWorld myTest = new HelloWorld();
+	assertEquals(3, HelloWorld.SayHelloWorld(testArgs));
+    }
 }

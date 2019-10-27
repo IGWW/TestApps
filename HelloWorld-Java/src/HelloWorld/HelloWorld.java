@@ -53,8 +53,7 @@ public class HelloWorld {
 
 	    firstArg = Max;
 
-	    // throw new NumberFormatException("Argument <" + args[0] + "> must be a
-	    // Positive Integer");
+	    // throw new NumberFormatException("Argument <" + args[0] + "> must be a Positive Integer");
 
 	} catch (NullPointerException e) {
 	    System.err.println("MISSING ARGUMENT: Argument must be a Positive Integer");
@@ -63,8 +62,7 @@ public class HelloWorld {
 
 	    firstArg = Max;
 
-	    // throw new NullPointerException("MISSING ARGUMENT: Argument must be a Positive
-	    // Integer");
+	    // throw new NullPointerException("MISSING ARGUMENT: Argument must be a Positive Integer");
 
 	} catch (ArrayIndexOutOfBoundsException e) {
 	    System.err.println("NO ARGUMENT: Argument must be a Positive Integer");
@@ -73,8 +71,7 @@ public class HelloWorld {
 
 	    firstArg = Max;
 
-	    // throw new ArrayIndexOutOfBoundsException("NO ARGUMENT: Argument must be a Positive
-	    // Integer");
+	    //throw new ArrayIndexOutOfBoundsException("NO ARGUMENT: Argument must be a Positive Integer");
 
 	} catch (Exception e) {
 
@@ -90,6 +87,12 @@ public class HelloWorld {
 	    firstArg = Max;
 	}
 
+	if (args != null) {
+		if (args.length > 1) {
+		System.err.println("Extra " + (args.length-1) + " argument(s) are ignored!");
+		}
+    } 
+	
 	Max = firstArg;
 
 	while (i <= Max) {
